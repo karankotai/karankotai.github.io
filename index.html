@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Karan Kotai | Full Stack Developer</title>
+    <meta name="description" content="Karan Kotai - Full Stack Web Developer portfolio. Proficient in React, Next.js, TypeScript, MongoDB, Express, and more." />
+    <meta property="og:title" content="Karan Kotai | Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Web Developer portfolio with terminal aesthetic." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Karan Kotai | Full Stack Developer" />
+    <script>
+      // Prevent dark mode flash
+      (function () {
+        const stored = localStorage.getItem('vueuse-color-scheme')
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (stored === 'dark' || (!stored && prefersDark) || stored === null) {
+          document.documentElement.classList.add('dark')
+        } else {
+          document.documentElement.classList.remove('dark')
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

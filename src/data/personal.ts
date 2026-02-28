@@ -10,5 +10,5 @@ traits: ['System Design', 'Ownership Mindset', 'Product Thinking'],
   email: 'karankotai23@gmail.com',
   github: 'https://github.com/karankotai',
   linkedin: 'https://www.linkedin.com/in/karan-kotai-1a79a9270/',
-  resume: 'https://drive.google.com/file/d/1pkkMgawxtbA3mYI61robfMhEI3gjEkv0/view',
+  resume: 'https://drive.google.com/file/d/1TrHqEH-d4yY3T88JyfOH_7mZvhQBO81P/view',
 }

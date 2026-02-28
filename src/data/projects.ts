@@ -3,15 +3,15 @@ import type { Project } from '@/types'
 export const projects: Project[] = [
   {
     title: 'Doom',
-    description: 'Interactive learning platform with structured courses, AI-powered applets, XP progression, and streak-based gamification for hands-on education.',
+    description: 'Experimental learning platform exploring AI-assisted education through decision-based applets, progression systems, and adaptive user engagement mechanics.',
     tech: ['Next.js', 'Hono', 'PostgreSQL', 'Bun', 'TypeScript'],
     live: 'https://doom-frontend.vercel.app/',
     repo: 'https://github.com/karankotai/doom',
   },
   {
     title: 'Ask-CA',
-    description: 'RAG-powered Q&A app that crawls government documents, stores them in PostgreSQL, and answers queries with source-cited responses benchmarked against GPT and Gemini.',
-    tech: ['Next.js', 'Prisma', 'PostgreSQL', 'RAG', 'Tailwind CSS'],
+    description: 'Built a RAG pipeline that ingests and chunks government documents, performs semantic retrieval, and generates source-grounded answers benchmarked against GPT and Gemini.',
+    tech: ['Next.js', 'Prisma', 'PostgreSQL', 'RAG Architecture', 'Tailwind CSS'],
     live: 'https://ask-ca.vercel.app/',
     repo: 'https://github.com/karankotai/ask-ca',
   },

@@ -15,7 +15,7 @@ import { projects } from '@/data/projects'
         <SectionHeading command="projects/" />
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
         <div
           v-for="(project, index) in projects"
           :key="project.title"

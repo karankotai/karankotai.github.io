@@ -8,13 +8,13 @@ export const projects: Project[] = [
     live: 'https://doom-frontend.vercel.app/',
     repo: 'https://github.com/karankotai/doom',
   },
-  {
-    title: 'Ask-CA',
-    description: 'Built a RAG pipeline that ingests and chunks government documents, performs semantic retrieval, and generates source-grounded answers benchmarked against GPT and Gemini.',
-    tech: ['Next.js', 'Prisma', 'PostgreSQL', 'RAG Architecture', 'Tailwind CSS'],
-    live: 'https://ask-ca.vercel.app/',
-    repo: 'https://github.com/karankotai/ask-ca',
-  },
+  // {
+  //   title: 'Ask-CA',
+  //   description: 'Built a RAG pipeline that ingests and chunks government documents, performs semantic retrieval, and generates source-grounded answers benchmarked against GPT and Gemini.',
+  //   tech: ['Next.js', 'Prisma', 'PostgreSQL', 'RAG Architecture', 'Tailwind CSS'],
+  //   live: 'https://ask-ca.vercel.app/',
+  //   repo: 'https://github.com/karankotai/ask-ca',
+  // },
   {
       title: 'Discord Clone',
       description: 'Real-time messaging platform implementing channel-based communication, media uploads, and authenticated user sessions.',

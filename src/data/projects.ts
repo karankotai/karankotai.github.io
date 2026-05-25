@@ -19,6 +19,7 @@ export const projects: Project[] = [
     title: 'The Gang',
     description: 'Web app recreating the cooperative poker board game for playing with friends online. Realtime multi-room state sync with PartyKit on top of a Next.js client.',
     tech: ['Next.js', 'TypeScript', 'PartyKit', 'WebSockets'],
+    live: 'https://the-gang-sooty.vercel.app/',
     repo: 'https://github.com/karankotai/the-gang',
   },
   {

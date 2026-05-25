@@ -1,39 +1,29 @@
 import type { Experience } from '@/types'
 
 export const experiences: Experience[] = [
-  // {
-  //   hash: 'a3f7c2d',
-  //   company: 'Acme Corp',
-  //   role: 'SDE-2 (Full Stack)',
-  //   period: '2025 - Present',
-  //   achievements: [
-  //     'Architected and led migration of monolith to microservices, reducing deploy times by 60%',
-  //     'Designed event-driven pipelines with RabbitMQ handling 50k+ messages/day',
-  //     'Owned end-to-end delivery of payment integration module serving 100k+ users',
-  //     'Mentored 3 junior engineers through code reviews and design sessions',
-  //   ],
-  // },
   {
     hash: 'b8e1f4a',
-    company: 'Learno.ai',
+    company: 'Peach.study',
     role: 'Software Development Engineer I',
     period: '2024 - Present',
     achievements: [
-      'Led development of a Next.js dashboard using Server Components, reducing TTFB by 45% and improving perceived load performance.',
-      'Owned production deployment infrastructure on DigitalOcean with Cloudflare CDN and routing, enabling stable zero-downtime releases.',
-      'Designed PostgreSQL data models and scalable REST APIs supporting 10k+ daily active users and analytics-heavy workflows.',
-      'Introduced Playwright E2E testing, achieving 85% coverage across business-critical user flows and reducing regression issues.',
+      'Built Ask CA end-to-end as sole engineer — a RAG assistant for Chartered Accountants ingesting circulars from 13 Indian regulators (RBI, SEBI, MCA, CBDT, GST Council, IRDAI), with a Python/FastAPI backend handling crawling, OCR, indexing, retrieval, and evaluation.',
+      'Implemented hybrid retrieval combining Qdrant (vector) and Neo4j (graph) for amendment and supersession queries between regulatory circulars, validated via a custom evaluation framework on blind GST test sets.',
+      'Built an asynchronous AI feedback pipeline integrating LLM-based evaluation with rubric-driven grading, enabling scalable automated feedback within teacher review workflows.',
+      'Designed and optimized MongoDB aggregation pipelines powering class-level analytics and collective performance reporting across large student datasets.',
+      'Developed data-intensive teacher dashboards using React, Next.js, and React Query, managing complex server-state synchronization and dynamic analytics views.',
+      'Engineered an assessment integrity system using rrweb-based session recording to detect tab switching, paste events, and behavioral anomalies during online assessments.',
     ],
   },
   {
     hash: 'c5d9e3b',
     company: 'Masai School',
-    role: 'Full Stack Development Student',
-    period: '2022 - 2023',
+    role: 'Instructional Associate (Part-Time)',
+    period: '2023',
     achievements: [
-      'Completed intensive full-stack web development program',
-      'Built 10+ production-grade projects using MERN stack and modern tooling',
-      'Practiced agile methodologies, pair programming, and system design fundamentals',
+      'Mentored students in Data Structures, Algorithms, and full-stack development, debugging complex coding issues and guiding structured problem-solving.',
+      'Conducted mock technical interviews simulating real hiring processes, evaluating problem-solving, system design thinking, and code quality.',
+      'Provided actionable feedback that targeted the specific habits each student kept tripping on, so the next round of practice was aimed at fixing something concrete.',
     ],
   },
 ]

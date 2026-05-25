@@ -11,6 +11,27 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
+    category: 'AI & Data Systems',
+    skills: [
+      { name: 'RAG Architectures' },
+      { name: 'LLM Integration (OpenAI, Gemini)' },
+      { name: 'Embeddings & Vector Search' },
+      { name: 'Evaluation Frameworks' },
+      { name: 'Event Tracking (rrweb)' },
+    ],
+  },
+  {
+    category: 'Backend',
+    skills: [
+      { name: 'FastAPI' },
+      { name: 'Node.js' },
+      { name: 'Express' },
+      { name: 'NestJS' },
+      { name: 'REST APIs' },
+      { name: 'GraphQL' },
+    ],
+  },
+  {
     category: 'Frontend',
     skills: [
       { name: 'React' },
@@ -21,13 +42,14 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: 'Backend',
+    category: 'Data & Storage',
     skills: [
-      { name: 'Node.js' },
-      { name: 'Express' },
-      { name: 'NestJS' },
-      { name: 'REST APIs' },
-      { name: 'GraphQL' },
+      { name: 'PostgreSQL' },
+      { name: 'MongoDB' },
+      { name: 'Qdrant (vector)' },
+      { name: 'Neo4j (graph)' },
+      { name: 'Redis' },
+      { name: 'Prisma' },
     ],
   },
   {
@@ -40,30 +62,12 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    category: 'Data & Storage',
-    skills: [
-      { name: 'PostgreSQL' },
-      { name: 'MongoDB' },
-      { name: 'Redis' },
-      { name: 'Prisma' },
-    ],
-  },
-  {
-    category: 'AI & Data Systems',
-    skills: [
-      { name: 'RAG Architectures' },
-      { name: 'LLM Integration' },
-      { name: 'Event Tracking (rrweb)' },
-      { name: 'Data Visualization (Recharts)' },
-    ],
-  },
-  {
     category: 'Cloud & Infrastructure',
     skills: [
       { name: 'AWS (EC2, S3, Lambda)' },
       { name: 'Docker' },
       { name: 'CI/CD (GitHub Actions)' },
-      { name: 'Cloudflare (Edge & CDN)'}
+      { name: 'Cloudflare (Edge & CDN)' },
     ],
   },
   {

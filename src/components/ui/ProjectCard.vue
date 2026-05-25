@@ -29,6 +29,7 @@ defineProps<{
 
       <div class="flex gap-4 pt-2 text-sm">
         <a
+          v-if="project.live"
           :href="project.live"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,6 +38,7 @@ defineProps<{
           ./demo
         </a>
         <a
+          v-if="project.repo"
           :href="project.repo"
           target="_blank"
           rel="noopener noreferrer"

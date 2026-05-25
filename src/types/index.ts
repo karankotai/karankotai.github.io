@@ -25,8 +25,8 @@ export interface Project {
   title: string
   description: string
   tech: string[]
-  live: string
-  repo: string
+  live?: string
+  repo?: string
 }
 
 export interface Experience {

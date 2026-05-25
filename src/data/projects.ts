@@ -3,15 +3,8 @@ import type { Project } from '@/types'
 export const projects: Project[] = [
   {
     title: 'Ask CA',
-    description: 'Production RAG assistant for Indian Chartered Accountants. Ingests circulars from 13 regulators (RBI, SEBI, MCA, CBDT, GST Council, IRDAI) and answers natural-language queries grounded in source documents. Built end-to-end as sole engineer — crawling, OCR, indexing, hybrid Qdrant + Neo4j retrieval, and a custom eval framework benchmarking against GPT and Gemini on blind GST test sets.',
+    description: 'Production RAG assistant for Indian Chartered Accountants (live as RegMitra). Ingests circulars from 13 regulators (RBI, SEBI, MCA, CBDT, GST Council, IRDAI) and answers natural-language queries grounded in source documents. Built end-to-end as sole engineer — crawling, OCR, indexing, hybrid Qdrant + Neo4j retrieval, and a custom eval framework benchmarking against GPT and Gemini on blind GST test sets.',
     tech: ['Python', 'FastAPI', 'Next.js', 'Qdrant', 'Neo4j', 'PostgreSQL', 'OpenAI', 'Gemini'],
-    live: 'https://ask-ca.vercel.app/',
-    repo: 'https://github.com/karankotai/ask-ca',
-  },
-  {
-    title: 'RegMitra',
-    description: 'Regulatory-intelligence product for Indian Chartered Accountants. Designed the MVP architecture covering source ingestion, classification, and reviewer-facing surfaces.',
-    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Python', 'Playwright'],
     live: 'https://reg-mitra-mvp.vercel.app/',
     repo: 'https://github.com/karankotai/ask-ca',
   },

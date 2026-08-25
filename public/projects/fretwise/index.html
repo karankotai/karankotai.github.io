@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fretwise | Karan Kotai</title>
+    <meta
+      name="description"
+      content="Fretwise is a native iOS guitar companion with realtime chord detection, tuner tools, and lesson flow."
+    />
+    <link rel="stylesheet" href="/projects/project-page.css" />
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <a href="/">karan.dev</a>
+        <a href="/#projects">back to projects</a>
+      </nav>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">$ open projects/fretwise</p>
+            <h1>Fretwise</h1>
+            <p class="lede">
+              A native iOS guitar companion that listens through the microphone and identifies chords in real time.
+              It combines SwiftUI practice screens, AVFoundation audio capture, tuner tools, lesson progression,
+              and custom DSP for pitch and chord recognition.
+            </p>
+            <div class="actions">
+              <a class="button secondary" href="/">portfolio</a>
+            </div>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">fretwise.ios</span>
+            </div>
+            <div class="phone">
+              <div class="phone-screen guitar">
+                <div class="string-bank" aria-hidden="true">
+                  <span class="string"></span>
+                  <span class="string"></span>
+                  <span class="string active"></span>
+                  <span class="string"></span>
+                  <span class="string"></span>
+                  <span class="string"></span>
+                </div>
+                <div class="note">G</div>
+                <div class="gauge">
+                  <span class="needle"></span>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-label">PRACTICE</div>
+                  <div class="mock-title">Hold G major cleanly</div>
+                  <div class="mock-copy">
+                    The lesson engine advances when realtime chord detection confirms the target chord for the required
+                    duration.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>What it does</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Realtime chord detection</h3>
+              <p>Captures microphone input and classifies chords through pitch, chroma, and chord-template matching.</p>
+            </article>
+            <article class="panel">
+              <h3>Guided practice</h3>
+              <p>Lesson steps show the target chord, fretboard shape, tab flow, confidence, and hold-progress feedback.</p>
+            </article>
+            <article class="panel">
+              <h3>Tuner mode</h3>
+              <p>Detects the nearest guitar string, displays cents offset, and visualizes tuning accuracy with a gauge.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Build notes</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Audio engine</h3>
+              <p>Custom Swift audio services handle capture, pitch detection, chroma extraction, and chord classification.</p>
+            </article>
+            <article class="panel">
+              <h3>SwiftUI app</h3>
+              <p>Practice, onboarding, tuner, and lesson views are composed as native SwiftUI screens.</p>
+            </article>
+            <article class="panel">
+              <h3>Test coverage</h3>
+              <p>Includes tests for chord libraries, chroma extraction, pitch detection, tuner logic, and lesson flow.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Stack</h2>
+          <div class="stack">
+            <span class="tag">Swift</span>
+            <span class="tag">SwiftUI</span>
+            <span class="tag">AVFoundation</span>
+            <span class="tag">Audio DSP</span>
+            <span class="tag">XCTest</span>
+          </div>
+        </section>
+      </main>
+
+      <footer>Built by Karan Kotai.</footer>
+    </div>
+  </body>
+</html>

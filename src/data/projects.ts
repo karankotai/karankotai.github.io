@@ -19,11 +19,13 @@ export const projects: Project[] = [
     title: 'Fretwise',
     description: 'Native iOS guitar companion that listens through the microphone and identifies chords in real time. Built with SwiftUI and AVFoundation around a custom audio DSP pipeline for low-latency chord detection.',
     tech: ['Swift', 'SwiftUI', 'AVFoundation', 'Audio DSP'],
+    live: '/projects/fretwise/',
   },
   {
     title: 'InfoScroll',
     description: 'Mobile learning feed that turns idle scrolling into swipeable concept cards and curated short videos. Built with Expo Router, a Supabase auth/feed backend, personalized seen/saved/skipped state, and a TypeScript content pipeline that validates and uploads generated cards.',
     tech: ['Expo', 'React Native', 'Supabase', 'Zustand', 'TypeScript'],
+    live: '/projects/infoscroll/',
     repo: 'https://github.com/karankotai/infoscroll',
   },
   {

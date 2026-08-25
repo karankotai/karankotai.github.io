@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfoScroll | Karan Kotai</title>
+    <meta
+      name="description"
+      content="InfoScroll is a mobile learning feed for swipeable concept cards and curated short videos."
+    />
+    <link rel="stylesheet" href="/projects/project-page.css" />
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <a href="/">karan.dev</a>
+        <a href="/#projects">back to projects</a>
+      </nav>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">$ open projects/infoscroll</p>
+            <h1>InfoScroll</h1>
+            <p class="lede">
+              A mobile learning feed that turns idle scrolling into swipeable concept cards and curated short videos.
+              The app combines an Expo Router client with Supabase auth, personalized feed state, and a TypeScript
+              content pipeline for validating and uploading generated educational cards.
+            </p>
+            <div class="actions">
+              <a class="button" href="https://github.com/karankotai/infoscroll" target="_blank" rel="noreferrer">
+                view repo
+              </a>
+              <a class="button secondary" href="/">portfolio</a>
+            </div>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">infoscroll.app</span>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="pill-row">
+                  <span class="pill active">Cards</span>
+                  <span class="pill">Shorts</span>
+                </div>
+                <div class="mock-card">
+                  <div class="mock-label">SUMMARY</div>
+                  <div class="mock-title">Why vector search needs reranking</div>
+                  <div class="mock-copy">
+                    Dense retrieval finds semantically close candidates. A reranker then scores the shortlist with more
+                    context, improving precision without scanning the whole corpus.
+                  </div>
+                  <div class="mock-actions">
+                    <span>skip</span>
+                    <span>save</span>
+                    <span>seen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>What it does</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Swipeable learning cards</h3>
+              <p>Serves quick facts, summaries, mini threads, key insights, and did-you-know cards through a mobile feed.</p>
+            </article>
+            <article class="panel">
+              <h3>Short video mode</h3>
+              <p>Separates concept cards from curated YouTube shorts with dedicated feed state and video rendering.</p>
+            </article>
+            <article class="panel">
+              <h3>Personalized state</h3>
+              <p>Tracks seen, saved, and skipped cards in Supabase so feed results can adapt across sessions.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Build notes</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Mobile client</h3>
+              <p>Expo Router, React Native, Zustand, and card-specific renderers keep the feed fast and modular.</p>
+            </article>
+            <article class="panel">
+              <h3>Backend</h3>
+              <p>Supabase handles auth, feed tables, user card state, RPC-powered feeds, and news cache migrations.</p>
+            </article>
+            <article class="panel">
+              <h3>Content pipeline</h3>
+              <p>TypeScript scripts generate prompt batches, validate outputs with Zod, and upload clean card payloads.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Stack</h2>
+          <div class="stack">
+            <span class="tag">Expo</span>
+            <span class="tag">React Native</span>
+            <span class="tag">Supabase</span>
+            <span class="tag">Zustand</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Zod</span>
+          </div>
+        </section>
+      </main>
+
+      <footer>Built by Karan Kotai.</footer>
+    </div>
+  </body>
+</html>

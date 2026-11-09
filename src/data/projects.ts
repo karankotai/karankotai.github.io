@@ -5,7 +5,7 @@ export const projects: Project[] = [
     title: 'Ask CA',
     description: 'Production RAG assistant for Indian Chartered Accountants, live as RegMitra. Ingests circulars from 13 regulators and answers source-grounded compliance questions with hybrid Qdrant + Neo4j retrieval, OCR, citation-aware responses, and a custom eval harness for blind GST test sets.',
     tech: ['Python', 'FastAPI', 'Next.js', 'Qdrant', 'Neo4j', 'PostgreSQL', 'OpenAI', 'Gemini'],
-    live: 'https://reg-mitra-mvp.vercel.app/',
+    live: 'https://ask-ca.vercel.app/',
     repo: 'https://github.com/karankotai/ask-ca',
   },
   {

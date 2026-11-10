@@ -9,6 +9,19 @@ export const projects: Project[] = [
     repo: 'https://github.com/karankotai/ask-ca',
   },
   {
+    title: 'InfoScroll',
+    description: 'Mobile learning feed that turns idle scrolling into swipeable concept cards and curated short videos. Built with Expo Router, a Supabase auth/feed backend, personalized seen/saved/skipped state, and a TypeScript content pipeline that validates and uploads generated cards.',
+    tech: ['Expo', 'React Native', 'Supabase', 'Zustand', 'TypeScript'],
+    live: '/projects/infoscroll/',
+    repo: 'https://github.com/karankotai/infoscroll',
+  },
+  {
+    title: 'LocalPilot',
+    description: 'Native Swift macOS agent that serves a phone-friendly web UI for controlling your Mac over local Wi-Fi. Handles pointer movement, clicks, scrolling, text and special-key input, and media/volume controls through a local HTTP server, structured to grow into a menu-bar app with QR pairing, WebSockets, and command surfaces.',
+    tech: ['Swift', 'macOS', 'HTTP Server', 'WebSockets'],
+    repo: 'https://github.com/karankotai/localpilot',
+  },
+  {
     title: 'The Gang',
     description: 'Realtime web adaptation of the cooperative poker board game, built for remote groups to play together. PartyKit handles multi-room state sync while the Next.js client keeps table state, invitations, and turn flow responsive.',
     tech: ['Next.js', 'TypeScript', 'PartyKit', 'WebSockets'],
@@ -22,31 +35,11 @@ export const projects: Project[] = [
     live: '/projects/fretwise/',
   },
   {
-    title: 'InfoScroll',
-    description: 'Mobile learning feed that turns idle scrolling into swipeable concept cards and curated short videos. Built with Expo Router, a Supabase auth/feed backend, personalized seen/saved/skipped state, and a TypeScript content pipeline that validates and uploads generated cards.',
-    tech: ['Expo', 'React Native', 'Supabase', 'Zustand', 'TypeScript'],
-    live: '/projects/infoscroll/',
-    repo: 'https://github.com/karankotai/infoscroll',
-  },
-  {
     title: 'Doom',
     description: 'Experimental learning platform for decision-based applets, progression loops, and adaptive study mechanics. Explores how AI-assisted education can feel more like interactive practice than passive content consumption.',
     tech: ['Next.js', 'Hono', 'PostgreSQL', 'Bun', 'TypeScript'],
     live: 'https://doom-frontend.vercel.app/',
     repo: 'https://github.com/karankotai/doom',
-  },
-  {
-    title: 'Masai Flow',
-    description: 'Learning platform prototype with a modular quiz engine, cleaner application architecture, and optimized data flow across React, Express, and MongoDB.',
-    tech: ['React', 'Express', 'MongoDB'],
-    live: 'https://masai-flow.vercel.app/',
-    repo: 'https://github.com/karankotai/Masai-Flow',
-  },
-  {
-    title: 'LocalPilot',
-    description: 'Native Swift macOS agent that serves a phone-friendly web UI for controlling your Mac over local Wi-Fi. Handles pointer movement, clicks, scrolling, text and special-key input, and media/volume controls through a local HTTP server, structured to grow into a menu-bar app with QR pairing, WebSockets, and command surfaces.',
-    tech: ['Swift', 'macOS', 'HTTP Server', 'WebSockets'],
-    repo: 'https://github.com/karankotai/localpilot',
   },
   {
     title: 'URL Shortener',

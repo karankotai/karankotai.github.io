@@ -42,4 +42,16 @@ export const projects: Project[] = [
     live: 'https://masai-flow.vercel.app/',
     repo: 'https://github.com/karankotai/Masai-Flow',
   },
+  {
+    title: 'LocalPilot',
+    description: 'Native Swift macOS agent that serves a phone-friendly web UI for controlling your Mac over local Wi-Fi. Handles pointer movement, clicks, scrolling, text and special-key input, and media/volume controls through a local HTTP server, structured to grow into a menu-bar app with QR pairing, WebSockets, and command surfaces.',
+    tech: ['Swift', 'macOS', 'HTTP Server', 'WebSockets'],
+    repo: 'https://github.com/karankotai/localpilot',
+  },
+  {
+    title: 'URL Shortener',
+    description: 'System design hands-on project: a FastAPI service that shortens URLs and tracks click counts, backed by PostgreSQL for persistent link storage and Redis for fast lookups and redirects.',
+    tech: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'SQLAlchemy'],
+    repo: 'https://github.com/karankotai/url-shortner',
+  },
 ]

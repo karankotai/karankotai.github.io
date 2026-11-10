@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LocalPilot | Karan Kotai</title>
+    <meta
+      name="description"
+      content="LocalPilot is a native Swift macOS agent that serves a phone-friendly web UI for controlling your Mac over local Wi-Fi."
+    />
+    <link rel="stylesheet" href="/projects/project-page.css" />
+  </head>
+  <body>
+    <div class="page">
+      <nav class="nav">
+        <a href="/">karan.dev</a>
+        <a href="/#projects">back to projects</a>
+      </nav>
+
+      <main>
+        <section class="hero">
+          <div>
+            <p class="eyebrow">$ open projects/localpilot</p>
+            <h1>LocalPilot</h1>
+            <p class="lede">
+              A native Swift macOS agent that turns your phone into a local control surface for your Mac. It serves a
+              phone-friendly web UI over Wi-Fi and drives the pointer, clicks, scrolling, keyboard, and media keys
+              through CoreGraphics — closer to a Stream Deck plus trackpad than a remote desktop, with no cloud in the
+              loop.
+            </p>
+            <div class="actions">
+              <a class="button" href="https://github.com/karankotai/localpilot" target="_blank" rel="noreferrer">
+                view repo
+              </a>
+              <a class="button secondary" href="/">portfolio</a>
+            </div>
+          </div>
+
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">localpilot · http://192.168.1.2:4545</span>
+            </div>
+            <div class="phone">
+              <div class="phone-screen">
+                <div class="lp-app">
+                  <div>
+                    <h3 class="lp-title">LocalPilot</h3>
+                    <div class="lp-status">
+                      <span class="lp-led"></span>
+                      Connected. Accessibility permission is enabled.
+                    </div>
+                  </div>
+                  <div class="lp-tabs">
+                    <button type="button" class="lp-tab active" data-panel="pad">Trackpad</button>
+                    <button type="button" class="lp-tab" data-panel="keyboard">Keyboard</button>
+                    <button type="button" class="lp-tab" data-panel="controls">Controls</button>
+                  </div>
+                  <div class="lp-panels">
+                    <div class="lp-panel is-pad active" data-panel="pad">
+                      <div class="lp-pad">
+                        <span class="lp-cursor"></span>
+                        <span class="lp-hint">drag to move · tap to click<br />two-finger to scroll</span>
+                      </div>
+                    </div>
+                    <div class="lp-panel" data-panel="keyboard">
+                      <textarea class="lp-textarea" rows="4" placeholder="Type text to send to the Mac…"></textarea>
+                      <button type="button" class="lp-send">Send Text</button>
+                      <div class="lp-keys">
+                        <button type="button" class="lp-key">⌫</button>
+                        <button type="button" class="lp-key">↵</button>
+                        <button type="button" class="lp-key">Tab</button>
+                        <button type="button" class="lp-key">Esc</button>
+                        <button type="button" class="lp-key">←</button>
+                        <button type="button" class="lp-key">→</button>
+                        <button type="button" class="lp-key">↑</button>
+                        <button type="button" class="lp-key">↓</button>
+                      </div>
+                    </div>
+                    <div class="lp-panel" data-panel="controls">
+                      <div class="lp-media-grid">
+                        <button type="button" class="lp-media">Prev</button>
+                        <button type="button" class="lp-media">Next</button>
+                        <button type="button" class="lp-media">Play/Pause</button>
+                        <button type="button" class="lp-media">Mute</button>
+                        <button type="button" class="lp-media">Vol −</button>
+                        <button type="button" class="lp-media">Vol +</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lp-foot">
+                    <button type="button">Click</button>
+                    <button type="button">Right Click</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>What it does</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Trackpad &amp; gestures</h3>
+              <p>Pointer movement, tap to click, double-tap, right click, and two-finger scroll are recognized in the browser and mapped to CoreGraphics events on the Mac.</p>
+            </article>
+            <article class="panel">
+              <h3>Keyboard &amp; media</h3>
+              <p>Send typed text and special keys (⌫ ↵ Tab Esc arrows), along with previous/next, play/pause, mute, and volume controls driven by system-defined key events.</p>
+            </article>
+            <article class="panel">
+              <h3>Local-only by design</h3>
+              <p>The Mac serves the UI and binds to local network interfaces only. QR/PIN pairing and revocable device tokens are on the roadmap so control endpoints can be locked down.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Build notes</h2>
+          <div class="grid">
+            <article class="panel">
+              <h3>Swift agent</h3>
+              <p>A single Swift Package executable synthesizes mouse, keyboard, and media key events through AppKit and CoreGraphics, then runs on the main run loop.</p>
+            </article>
+            <article class="panel">
+              <h3>Phone web UI</h3>
+              <p>The Mac serves the mobile page over Network.framework, streaming input over WebSocket for low latency with a per-command REST fallback when the socket is down.</p>
+            </article>
+            <article class="panel">
+              <h3>Permissions &amp; packaging</h3>
+              <p>Accessibility permission gates input control and is surfaced in the UI. A build script wraps the executable into a .app bundle so macOS trust survives rebuilds.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Stack</h2>
+          <div class="stack">
+            <span class="tag">Swift</span>
+            <span class="tag">AppKit</span>
+            <span class="tag">CoreGraphics</span>
+            <span class="tag">Network.framework</span>
+            <span class="tag">WebSockets</span>
+            <span class="tag">Vanilla JS</span>
+          </div>
+        </section>
+      </main>
+
+      <footer>Built by Karan Kotai.</footer>
+    </div>
+
+    <script>
+      const tabs = document.querySelectorAll(".lp-tab");
+      const panels = document.querySelectorAll(".lp-panel");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const name = tab.dataset.panel;
+          tabs.forEach((item) => item.classList.toggle("active", item === tab));
+          panels.forEach((panel) => panel.classList.toggle("active", panel.dataset.panel === name));
+        });
+      });
+    </script>
+  </body>
+</html>

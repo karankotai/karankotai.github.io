@@ -19,6 +19,7 @@ export const projects: Project[] = [
     title: 'LocalPilot',
     description: 'Native Swift macOS agent that serves a phone-friendly web UI for controlling your Mac over local Wi-Fi. Handles pointer movement, clicks, scrolling, text and special-key input, and media/volume controls through a local HTTP server, structured to grow into a menu-bar app with QR pairing, WebSockets, and command surfaces.',
     tech: ['Swift', 'macOS', 'HTTP Server', 'WebSockets'],
+    live: '/projects/localpilot/',
     repo: 'https://github.com/karankotai/localpilot',
   },
   {
